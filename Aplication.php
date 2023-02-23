@@ -19,8 +19,8 @@ public function executar(){
 	if(file_exists('Controllers/'.$url.'.php')){
 		
 		$classname = 'Controllers\\'.$url;
-		$controller = new $classname;//*
-		$controller->executar();//*
+		$controlador = new $classname;//*
+		$controlador->executar();//*
 	}else{
 		die('<h2 style=color:green;>Não existe esse controlador!</h2>');
 	}
