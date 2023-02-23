@@ -1,15 +1,6 @@
 <?php
 
-/**
- * 
- */
-class contatoController
-{
-	
-	public function executar(){
+//class C
 
-		echo 'executando';
-		}
-}
 
 ?>

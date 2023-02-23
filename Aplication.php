@@ -11,15 +11,18 @@ class Aplication
 	
 public function executar(){
 	$url = isset($_GET['url']) ? explode('/',$_GET['url'])[0] : 'home';
-	$classname = 'Controllers\\'.$url;
 	$url = ucfirst($url);
 	$url.="Controller";//
+	
+	
+	
 	if(file_exists('Controllers/'.$url.'.php')){
-		echo "estou carregando a classe".$classname;
-		$controlador = new $url;//*
-		$controlador->executar();//*
+		
+		$classname = 'Controllers\\'.$url;
+		$controller = new $classname;//*
+		$controller->executar();//*
 	}else{
-		die('controlador inexistente');
+		die('<h2 style=color:green;>Não existe esse controlador!</h2>');
 	}
 
 
