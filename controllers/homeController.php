@@ -1,17 +1,14 @@
 <?php
-
-
-namespace Controllers;
-
-class homeController
-{
-public function executar(){
-echo "
-
 	
-<h2>Estou na home</h2>";
+	namespace Controllers;
+	class HomeController
+	{
 
-}
-}
-
+		public function __construct(){
+			$this->view = new \Views\MainView('home');
+		}
+		public function execute(){
+			$this->view->render(array('titulo'=>'Home'));
+		}
+	}
 ?>

@@ -1,21 +1,19 @@
 <?php
+	
+	namespace Controllers;
 
-namespace Controllers;
+	class ContatoController
+	{
 
-class contatoController
-{
-   private $views;
+		
+		
+		public function execute(){
+		
 
-   public function __construct(){
-   	$this->views = new \views\contatoViews('contato');
-   	
-   }
+		
 
-public function executar(){
-	$this->views->render();
-}
-
-
+		echo"ecectando contato controller";
+	}
 
 }
 

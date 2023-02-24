@@ -1,11 +1,11 @@
 <?php
+	$autoload = function($class){
+	
+		include($class.'.php');
+	};
 
-$autoload = function($class){
-include ($class.'.php');
-};
-spl_autoload_register($autoload);
-$app = new Aplication();
-$app->executar();
+	spl_autoload_register($autoload);
 
-
+	$app = new App();
+	$app->execute();
 ?>

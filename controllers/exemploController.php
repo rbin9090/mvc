@@ -7,7 +7,7 @@
 class ExemploController
 {
 	
-public function executar(){
+public function execute(){
 	echo "executando exemplo";
 }
 }
