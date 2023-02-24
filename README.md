@@ -1,4 +1,4 @@
-# projeto MVC 
+# sistema em estrutura MVC 
 
 
-sistema esta carregandoo as classes em mvc funcionando o controller e views falta adicionr os models  mas o sistema ja responde corretamente
+sistema esta carregando as classes e funcionando perfeitamente utilizando orientacao a objetos
