@@ -15,7 +15,8 @@
 				$controlador = new $className;
 				$controlador->execute();
 			}else{
-				die("controlador inexistente");
+				include('404.php');
+				die();//controlador inexistente
 			}
 		}
 	}
